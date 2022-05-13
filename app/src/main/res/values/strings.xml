@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">moodnotes</string>
+    <string name="long_note">приготовить панкейки: 1 ст. кефира 1 шт. яйцо 2 ст. л. сахар 1 ст. муки 2 ст. л. масла</string>
+    <string name="short_note">позвонить в деканат</string>
+    <string name="mood_note">тревога</string>
+    <string name="mood_note_time">10:49</string>
+</resources>
