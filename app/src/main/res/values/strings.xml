@@ -4,4 +4,9 @@
     <string name="short_note">позвонить в деканат</string>
     <string name="mood_note">тревога</string>
     <string name="mood_note_time">10:49</string>
+    <string name="home">Домой</string>
+    <string name="diary">Дневник</string>
+    <string name="tracker">Трекер</string>
+    <string name="notes">Заметки</string>
+    <string name="navigation">Навигация</string>
 </resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/group_1"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/home_item"
+            android:title="@string/home"
+            android:icon="@drawable/ic_home"
+            />
+
+        <item
+            android:id="@+id/diary_item"
+            android:title="@string/diary"
+            android:icon="@drawable/ic_diary"/>
+
+        <item
+            android:id="@+id/tracker_item"
+            android:title="@string/tracker"
+            android:icon="@drawable/ic_mood_note"/>
+
+        <item
+            android:id="@+id/notes_item"
+            android:title="@string/notes"
+            android:icon="@drawable/ic_note"/>
+
+    </group>
+
+</menu>
