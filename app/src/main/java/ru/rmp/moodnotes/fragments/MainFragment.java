@@ -37,18 +37,18 @@ public class MainFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        layout = view.findViewById(R.id.drawer_layout);
-        layout.closeDrawer(Gravity.LEFT);
-        topAppBar = view.findViewById(R.id.toolbar);
-        navigationView = view.findViewById(R.id.navigation_view);
-        addButton = view.findViewById(R.id.home_add_button);
-        noteButton = view.findViewById(R.id.home_note_button);
-        noteButton.setVisibility(View.GONE);
-        moodNoteButton = view.findViewById(R.id.home_mood_note_button);
-        moodNoteButton.setVisibility(View.GONE);
-        isAllFabVisible = false;
-        initNavigationDrawer();
-        initButtons();
+//        layout = view.findViewById(R.id.drawer_layout);
+//        layout.closeDrawer(Gravity.LEFT);
+//        topAppBar = view.findViewById(R.id.toolbar);
+//        navigationView = view.findViewById(R.id.navigation_view);
+//        addButton = view.findViewById(R.id.home_add_button);
+//        noteButton = view.findViewById(R.id.home_note_button);
+//        noteButton.setVisibility(View.GONE);
+//        moodNoteButton = view.findViewById(R.id.home_mood_note_button);
+//        moodNoteButton.setVisibility(View.GONE);
+//        isAllFabVisible = false;
+//        initNavigationDrawer();
+//        initButtons();
     }
 
     @Override
@@ -59,7 +59,7 @@ public class MainFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.home_fragment, container, false);
+        return inflater.inflate(R.layout.notes_fragment, container, false);
     }
 
     private void initButtons() {
