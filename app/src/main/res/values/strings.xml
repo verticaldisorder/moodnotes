@@ -10,4 +10,7 @@
     <string name="notes">Заметки</string>
     <string name="navigation">Навигация</string>
     <string name="note">Заметка</string>
+    <string name="diary_note">запись в дневнике</string>
+    <string name="tracker_notes">записи в трекере</string>
+    <string name="notes_without_caps">заметки</string>
 </resources>
