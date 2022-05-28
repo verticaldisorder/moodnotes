@@ -13,4 +13,5 @@
     <string name="diary_note">запись в дневнике</string>
     <string name="tracker_notes">записи в трекере</string>
     <string name="notes_without_caps">заметки</string>
+    <string name="date_example">1 января, пятница</string>
 </resources>
