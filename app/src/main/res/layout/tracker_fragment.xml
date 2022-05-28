@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        style="@style/Widget.MaterialComponents.Toolbar.Primary"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:backgroundTint="@color/primary"
+        app:layout_anchor="@+id/appBarLayout"
+        app:layout_anchorGravity="center"
+        app:navigationIcon="@drawable/ic_menu"
+        app:navigationIconTint="@color/black"
+        app:title="@string/app_name"
+        app:titleTextColor="@color/black" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Последняя запись"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:fontFamily="@font/regular"
+        android:textSize="40sp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="40dp"
+        />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/tracker_last_note_card"
+        android:backgroundTint="@color/secondary_dark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:elevation="6dp"
+        android:focusable="true"
+        android:checkable="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            >
+
+            <TextView
+                android:id="@+id/tracker_last_note_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="тревожность"
+                android:fontFamily="@font/regular"
+                android:textSize="40sp"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                />
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/tracker_last_note_time_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center"
+        android:text="Запись сделана в 12:20"
+        android:fontFamily="@font/italic"
+    />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Что вы чувствуете сейчас?"
+        android:layout_gravity="center"
+        android:gravity=""
+        android:textColor="@color/black"
+        android:fontFamily="@font/regular"
+        android:textSize="40sp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="24dp"
+        />
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/tracker_slider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:valueFrom="0.00"
+        android:valueTo="10.0"
+        android:stepSize="0.5"
+        app:trackColor="@color/primary"
+        app:trackColorActive="@color/primary_light"
+        app:trackColorInactive="@color/primary_dark"
+        app:thumbColor="@color/primary"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tracker_mood_menu"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:hint="Выберите из списка"
+        app:hintTextColor="@color/black"
+        app:boxStrokeColor="@color/primary"
+        >
+
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:fontFamily="@font/regular"
+            android:inputType="none"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"
+        app:backgroundTint="@color/primary"
+        app:srcCompat="@drawable/ic_done"
+        android:contentDescription="@string/fab_transformation_sheet_behavior"
+        app:maxImageSize="50dp"
+        app:fabCustomSize="64dp"
+        android:tint="@color/black"
+        android:elevation="8dp"
+        />
+
+</LinearLayout>
