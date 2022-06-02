@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-import ru.rmp.moodnotes.fragments.MainFragment;
+import ru.rmp.moodnotes.views.MainFragment;
 
 public class MainActivity extends AppCompatActivity {
 
