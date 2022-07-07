@@ -27,4 +27,6 @@ public class CalendarFragment extends Fragment {
         binding = DataBindingUtil.setContentView(getActivity(), R.layout.calendar_fragment);
         return inflater.inflate(R.layout.calendar_fragment, container, false);
     }
+
+
 }

@@ -5,6 +5,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.LayoutInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
@@ -88,6 +89,36 @@ public class MainFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 binding.drawerLayout.open();
+            }
+        });
+
+        binding.navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                binding.navigationView.setCheckedItem(item);
+                switch (item.getItemId()) {
+                    case R.id.home_item:
+                        binding.drawerLayout.closeDrawer(Gravity.LEFT);
+                        Intent intentHome = new Intent(getContext(), MainFragment.class);
+                        startActivity(intentHome);
+                        break;
+                    case R.id.diary_item:
+                        binding.drawerLayout.closeDrawer(Gravity.LEFT);
+                        Intent intentDiary = new Intent(getContext(), DiaryFragment.class);
+                        startActivity(intentDiary);
+                        break;
+                    case R.id.notes_item:
+                        binding.drawerLayout.closeDrawer(Gravity.LEFT);
+                        Intent intentNotes = new Intent(getContext(), NotesFragment.class);
+                        startActivity(intentNotes);
+                        break;
+                    case R.id.tracker_item:
+                        binding.drawerLayout.closeDrawer(Gravity.LEFT);
+                        Intent intentTracker = new Intent(getContext(), TrackerFragment.class);
+                        startActivity(intentTracker);
+                        break;
+                }
+            return true;
             }
         });
     }

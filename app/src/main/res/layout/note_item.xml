@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/primary_light"
+    android:padding="16dp"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/note_item_datetime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/gray"
+        android:gravity="left"
+        android:fontFamily="@font/italic"
+        android:textSize="16sp"
+        android:text="20.01.19 10:39"
+        />
+
+    <TextView
+        android:id="@+id/note_item_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:gravity="left"
+        android:fontFamily="@font/italic"
+        android:textSize="20sp"
+        android:text="note content"
+        />
+
+</LinearLayout>
