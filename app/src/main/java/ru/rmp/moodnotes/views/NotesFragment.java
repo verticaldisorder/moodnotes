@@ -56,6 +56,7 @@ public class NotesFragment extends Fragment {
             e.printStackTrace();
         }
         NoteAdapter adapter = new NoteAdapter(this.getContext(), notes);
+        binding.notesRecyclerView.setAdapter(adapter);
     }
 
     private void initSendButton() {

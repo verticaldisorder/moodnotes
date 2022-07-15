@@ -43,6 +43,7 @@
         android:textColor="@color/black"
         android:textSize="20sp"
         android:inputType="textMultiLine"
+        android:imeOptions="actionDone"
         />
 
 </LinearLayout>
